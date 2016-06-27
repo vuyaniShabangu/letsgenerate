@@ -16,9 +16,9 @@ session_start();
 	
 	if($row['password'] == $password)
 	{
-		
-		$_SESSION['user_id'] = $row['id'];
-		header('Location: instructions.html');
+		echo $row['password'];
+		//$_SESSION['user_id'] = $row['id'];
+		//header('Location: instructions.html');
 	}
 	else
 	{
